@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- This makes sure your script runs after the DOM is loaded -->
+</head>
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <p class="message"></p> <!-- Ensure this element is correctly placed in your HTML -->
+    <div class="header">
+        <h4>Select the Size</h4>
+        <button id="popup">Select</button>
+    </div>
+    <div class="board"></div>
+    <div class="footer">
+        <button class="blackTile" onclick="setColor('black')">black</button>
+        <button class="randomTile" onclick="setColor('Random')">Random</button>
+        <button class="reset" onclick="reset()">Reset</button>
+    </div>
+</body>
+</html>
